@@ -14,6 +14,7 @@ defmodule Tai.VenueAdapters.OkEx.AssetBalances do
             venue_id: venue_id,
             account_id: account_id,
             asset: asset |> String.to_atom(),
+            type: "futures",
             free: free,
             locked: locked
           }

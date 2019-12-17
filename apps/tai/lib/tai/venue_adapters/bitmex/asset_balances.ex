@@ -16,6 +16,7 @@ defmodule Tai.VenueAdapters.Bitmex.AssetBalances do
       venue_id: venue_id,
       account_id: account_id,
       asset: :btc,
+      type: "default",
       free: amount |> Decimal.new() |> Decimal.reduce(),
       locked: Decimal.new(0)
     }
